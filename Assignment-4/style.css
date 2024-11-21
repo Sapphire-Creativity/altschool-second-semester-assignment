@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+body {
+	background: #effffd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5rem;
+	align-items: center;
+	justify-content: center;
+	padding: 5rem;
+}
+
+.first-div img {
+	width: 6rem;
+}
+
+.text-content h2 {
+	font-size: 2.3rem;
+	font-weight: 600;
+}
+
+.text-content p {
+	font-size: 0.8rem;
+	max-width: 500px;
+	margin: 0.6rem 0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	background: white;
+	padding: 2rem;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.135);
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	width: 100%;
+	margin-bottom: 1rem;
+	font-size: 0.8rem;
+	position: relative;
+}
+
+.input-field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
+}
+
+input,
+select {
+	width: 100%;
+	padding: 0.8rem;
+	font-size: 0.9rem;
+	border: 1px solid #ccc;
+}
+
+input:focus,
+select:focus {
+	outline: 1px solid #2ec4b6;
+}
+
+label {
+	font-weight: 500;
+}
+
+.password-input {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+}
+
+.password-input input {
+	border: none;
+	outline: none;
+}
+
+.password-input .icon {
+	margin-left: 5px;
+	margin-right: 0.8rem;
+}
+button {
+	margin-top: 0.5rem;
+	background: #2ec4b6;
+	color: #effffd;
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 1rem;
+	font-size: 1.1rem;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.135);
+	transition: 0.8s ease;
+}
+
+button:hover {
+	background: #1b9185;
+}
+
+.form-text p {
+	margin-top: 1.5rem;
+	text-align: center;
+	font-size: 0.75rem;
+}
+
+span {
+	color: #2ec4b6;
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+	.container {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+		padding: 3rem;
+	}
+	.first-div img {
+		width: 4rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		padding: 1.5rem;
+	}
+
+	.text-content h2 {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+
+	.text-content p {
+		font-size: 0.6rem;
+		max-width: 500px;
+		margin: 0.6rem 0;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+	}
+	form {
+		padding: 2rem 1.2rem;
+	}
+}
