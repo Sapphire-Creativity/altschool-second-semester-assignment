@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+body {
+	background: #f5f8fa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	font-family: "Poppins", sans-serif;
+}
+
+.main-section {
+	width: 100%;
+	padding-bottom: 5rem;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem;
+}
+
+.logo-section img {
+	width: 10rem;
+}
+
+.nav-link ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-link ul li {
+	margin: 1rem;
+	font-size: 0.8rem;
+}
+
+.link-button {
+	border: 1.5px solid #414141;
+	padding: 0.6rem;
+	border-radius: 5px;
+	font-weight: 500;
+}
+
+.checkout-section {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin: 0 auto;
+	max-width: 60rem;
+	background: white;
+	box-shadow: 0px 15px 35px rgba(43, 64, 78, 0.094);
+	margin-top: 5rem;
+}
+
+.info-details,
+.text-section {
+	padding: 2.5rem;
+}
+
+.text-section {
+	background: #1179bf;
+	color: white;
+}
+
+.info-details h2 {
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+.info-details hr {
+	margin: 1.5rem 0;
+	border: .5px solid #dcdcdc;
+}
+.tag {
+	display: flex;
+	align-items: center;
+	gap: 0.5px;
+}
+
+.tag .number {
+    border: 2px solid #1179bf; 
+    padding: 0.8rem;          
+    border-radius: 50%;        
+    font-weight: bold;        
+    text-align: center;      
+    width: 2rem;        
+    height: 2rem;           
+    display: flex;         
+    align-items: center;      
+    justify-content: center;   
+    color: #1179bf;          
+    background: #fff;         
+	overflow: hidden;
+	margin-right: 5px;
+}
+
+.tag h3 {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.input-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+.input-section .input,
+.email-section .input,
+.card-section .input {
+	display: flex;
+	flex-direction: column;
+	margin: 0.5rem 0;
+}
+
+.input {
+    flex: 1 1 calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+
+}
+input {
+	background: #edeff2;
+	padding: 0.8rem;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+label {
+	font-size: 0.75rem;
+	margin-bottom: 0.3rem;
+}
+
+::placeholder {
+	font-size: 0.7rem;
+	font-weight: 400;
+}
+
+button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	border: none;
+	padding: 1rem;
+	border-radius: 5px;
+	background: #038e7d;
+	color: whitesmoke;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.info-details p {
+	text-align: center;
+	font-size: 0.7rem;
+	margin: 1rem 0;
+}
+
+.stripe-button {
+	display: flex;
+	justify-content: center;
+}
+
+.text-section h4 {
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.price {
+	display: flex;
+	position: relative;
+	max-width: 110px;
+	align-items: center;
+}
+
+.price h2 {
+	font-size: 3rem;
+	font-weight: 400;
+	margin-left: 10px;
+}
+
+.price p {
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+.price span {
+	position: absolute;
+	bottom: 15px;
+	right: 0;
+	font-size: 0.8rem;
+}
+
+.text-section p {
+	font-size: 0.7rem;
+	padding-right: 2rem;
+}
+
+.features {
+	padding: 1rem 0;
+}
+.features li {
+	margin: 0.7rem;
+	font-size: 0.7rem;
+	font-weight: 300;
+}
+
+.features li i {
+	margin-right: 5px;
+	font-size: 0.8rem;
+	color: #cfeaff;
+}
+
+.text-section p{
+	font-size: .8rem;
+	margin: .5rem 0;
+}
+
+.text-section hr{
+	margin: 2rem 0;
+	border: .5px solid #bfe6ff;
+}
+
+.profile{
+	display: flex;
+	align-items: center;
+	margin: 1rem 0;
+	gap: 10px;
+}
+
+.profile img{
+	border-radius: 100%;
+}
+
+.main-section .footer-text{
+	text-align: center;
+	font-size: .7rem;
+	margin-top: 3rem;
+
+}
+
+.footer-text span{
+	color: #1179bf;
+}
+
+
+@media (max-width: 768px) {
+    .checkout-section {
+        grid-template-columns: 1fr;
+    }
+
+    .input {
+        flex: 1 1 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-link ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+	.input-section {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+}
